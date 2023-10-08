@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #016cc7;
+}
+
+/* meetup section */
+.meetup {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.img-rocket {
+  width: 200px;
+  height: 200px;
+}
+
+.left-side h1,
+.left-side h2,
+.left-side h3 {
+  font-weight: lighter;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #dd5138;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 8px;
+  padding: 10px 20px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+/* hero-section */
+.main-section {
+  text-align: center;
+}
+
+.features-header {
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  margin-bottom: 50px;
+}
+
+.features-boxes {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+
+.features-box {
+  flex: 1 1 33.3333%;
+  text-align: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.fa-ticket,
+.fa-microphone-lines,
+.fa-globe {
+  font-size: 50px;
+  color: #016cc7;
+  margin-bottom: 15px;
+}
+
+.features-box h2,
+.features-box p {
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  margin-bottom: 15px;
+}
+
+.features-box p {
+  line-height: 20px;
+}
+
+/* Speakers */
+
+.speakers-section h2 {
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  margin-bottom: 30px;
+}
+
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.speaker {
+  width: 386px;
+  text-align: center;
+  border: 0.5px solid rgb(243, 237, 237);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.speaker p,
+.speaker h3 {
+  color: rgb(105, 105, 125);
+  line-height: 1.25;
+}
+
+.img-speaker {
+  margin: 15px 0 10px 0;
+}
+
+.speakers-social {
+  margin-top: 15px;
+}
+
+.speakers-social i {
+  color: #016cc7;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.speakers-social i:first-child {
+  margin-left: 0;
+}
+
+.speakers-social i:last-child {
+  margin-right: 0;
+}
+
+/* tickets-section */
+.tickets-section {
+  text-align: center;
+  background-color: #fcd93b;
+  margin-top: 30px;
+  padding: 30px 0;
+}
+
+.buy-tickets {
+  color: rgb(105, 105, 105);
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.tickets {
+  display: flex;
+  justify-content: space-around;
+}
+
+.workshop-name {
+  padding-bottom: 20px;
+  font-weight: lighter;
+  font-size: 20px;
+  color: rgb(105, 105, 105);
+}
+
+.dollar {
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 60px;
+  color: #dd5138;
+}
+
+.workshop-info {
+  font-size: 15px;
+  font-weight: lighter;
+  color: rgb(105, 105, 105);
+  margin-bottom: 10px;
+}
+
+/* contact-section */
+
+.contact-section {
+  margin-top: 30px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(66, 66, 66);
+  padding-top: 30px;
+}
+
+.contact {
+  width: 50%;
+}
+.contact h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-form {
+  margin: auto;
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.input-group input {
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+}
+
+.input-group textarea {
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+}
+.input-group label {
+  margin-right: 20px;
+  color: #fff;
+}
+.btn-submit {
+  padding: 10px 20px;
+  background-color: #fcd93b;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: none;
+  border: 1px solid rgb(48, 47, 47);
+}
+
+.twitter-feed {
+  width: 30%;
+}
+
+.twitter-info {
+  border-bottom: 1px solid #fff;
+}
+
+.twitter-info:last-child {
+  border-bottom: none;
+}
+
+.twitter-feed h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: -120px;
+}
+
+.twitter-info p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+}
+
+/* footer section */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(58, 54, 54);
+  height: 30px;
+  padding: 30px 20px;
+}
+
+.all-rights {
+  color: #fff;
+  font-size: 10px;
+}
+
+.navax-link {
+  color: #016cc7;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li {
+  margin: 0 10px;
+  font-size: 10px;
+  color: #fcd93b;
+}
