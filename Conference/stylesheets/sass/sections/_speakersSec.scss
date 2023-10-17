@@ -1,0 +1,35 @@
+.speakers {
+  margin-bottom: 30px;
+  &-container {
+    
+  }
+  &__title {
+    text-align: center;
+  }
+  &-box {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    
+  }
+  &-profile {
+    flex: 1 1 250px;
+    border: 3px solid $light-gray;
+    padding: 15px;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    &__title {
+      font-size: 20px;
+      color: $title-gray;
+      margin-bottom: 0;
+    }
+    &__txt {}
+    &-footer {
+      width: 30%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

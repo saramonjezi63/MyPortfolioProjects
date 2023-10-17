@@ -1,0 +1,46 @@
+.intro {
+  background-color: $blue;
+  color: $white;
+  overflow: hidden;
+  margin: 0 0 50px 0;
+  .intro-container {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+    position: relative;
+  }
+
+  &-description {
+    position: relative;
+    z-index: 1;
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__txt {
+      color: rgba($white, 0.5);
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      margin-top: 50px;
+
+      &::after {
+        content: '\f061';
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+      }
+    }
+  }
+
+  &-rocket {
+    position: relative;
+    &__img {
+      max-width: 100%;
+      aspect-ratio: 1.116/1;
+      position: absolute;
+      right: -20%;
+    }
+  }
+}

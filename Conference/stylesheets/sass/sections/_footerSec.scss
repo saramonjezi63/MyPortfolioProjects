@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  padding: 0 4%;
+  background-color: $footer-gray;
+  display: grid;
+  place-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: $footer-title-gray;
+  &-copyright {
+    flex: 1 1 300px;
+    display: grid;
+    place-items: center start;
+    &__txt {
+      span {
+        color: $blue;
+      }
+    }
+  }
+  &-list-box {
+    flex: 1 1 300px;
+    display: grid;
+    place-items: center end; 
+  }
+  &-list {
+    list-style: none;
+    padding: 0;
+    color: $yellow;
+    li {
+      display: inline-block;
+      padding-right: 10px;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// ----- global -----
+@import "../normalize.css";
+@import "../webfonts.min.css";
+@import "./global/_color.scss";
+@import "./global/_document.scss";
+
+
+// ----- sections -----
+@import "./sections/_introSec.scss";
+@import "./sections/_detailsSec.scss";
+@import "./sections/_speakersSec.scss";
+@import "./sections/_ticketsSec.scss";
+@import "./sections/_contactSec.scss";
+@import "./sections/_footerSec.scss";
+
+// ----- responsive -----
+@import "./global/responsive";

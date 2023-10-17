@@ -1,0 +1,52 @@
+.contact {
+  background-color: $dark-gray;
+  color: $white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  &-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 50px 10%;
+  }
+  &-form-part {
+    flex: 1.1 1 300px;
+    justify-self: start;
+  }
+  &-form {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+    label {
+      display: flex;
+      justify-content: right;
+      padding-top: 10px;
+    }
+    input, textarea {
+      border-radius: 5px;
+      width: 100%;
+      padding: 10px;
+      border-style: none;
+      resize: none;
+    }
+  }
+  &-input-group {
+    display: contents;
+  }
+  &-btnbox {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: end;
+    color: $black;
+    &__btn {
+      border-radius: 5px;
+      font-size: 13px;
+      background-color: $dark-yellow;
+      border-style: none;
+      padding: 8px 12px;
+    }
+  }
+  &-feedbackbox {
+    flex: 1 1 300px;
+  }
+}

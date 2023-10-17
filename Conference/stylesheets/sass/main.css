@@ -1,0 +1,250 @@
+@import "../normalize.css";
+@import "../webfonts.min.css";
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 95%;
+  margin: auto;
+}
+
+.btn {
+  padding: 15px 40px;
+  border-radius: 5px;
+  background-color: #dd5138;
+  border-style: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.intro {
+  background-color: #016cc7;
+  color: #fff;
+  overflow: hidden;
+  margin: 0 0 50px 0;
+}
+.intro .intro-container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  position: relative;
+}
+.intro-description {
+  position: relative;
+  z-index: 1;
+}
+.intro-description__title {
+  margin-bottom: 30px;
+}
+.intro-description__txt {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+.intro-description__btn {
+  margin-top: 50px;
+}
+.intro-description__btn::after {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 8px;
+}
+.intro-rocket {
+  position: relative;
+}
+.intro-rocket__img {
+  max-width: 100%;
+  aspect-ratio: 1.116/1;
+  position: absolute;
+  right: -20%;
+}
+
+.details {
+  margin-bottom: 50px;
+}
+.details__title {
+  text-align: center;
+}
+.details-description {
+  display: flex;
+  flex-flow: row wrap;
+}
+.details-box {
+  flex: 1 1 250px;
+  padding: 20px;
+  text-align: center;
+}
+.details-box__icon {
+  font-size: 50px;
+  color: #0067c5;
+}
+.details-box__title {
+  font-size: 20px;
+  color: #555;
+}
+
+.speakers {
+  margin-bottom: 30px;
+}
+.speakers__title {
+  text-align: center;
+}
+.speakers-box {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+.speakers-profile {
+  flex: 1 1 250px;
+  border: 3px solid #F8F8F8;
+  padding: 15px;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+.speakers-profile__title {
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 0;
+}
+.speakers-profile-footer {
+  width: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tickets {
+  color: #555;
+  background-color: #fcd93b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.tickets-container {
+  padding: 30px 0;
+}
+.tickets-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  gap: 50px;
+}
+.tickets-box div {
+  flex: 1 1 300px;
+}
+.tickets-box__title {
+  font-size: 20px;
+}
+.tickets-box__price {
+  font-size: 50px;
+  color: #dd5138;
+  margin: 0;
+}
+
+.contact {
+  background-color: #3A3A3A;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.contact-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 50px 10%;
+}
+.contact-form-part {
+  flex: 1.1 1 300px;
+  justify-self: start;
+}
+.contact-form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 20px;
+}
+.contact-form label {
+  display: flex;
+  justify-content: right;
+  padding-top: 10px;
+}
+.contact-form input, .contact-form textarea {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  border-style: none;
+  resize: none;
+}
+.contact-input-group {
+  display: contents;
+}
+.contact-btnbox {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: end;
+  color: #000;
+}
+.contact-btnbox__btn {
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: #B8A13A;
+  border-style: none;
+  padding: 8px 12px;
+}
+.contact-feedbackbox {
+  flex: 1 1 300px;
+}
+
+.footer {
+  width: 100%;
+  padding: 0 4%;
+  background-color: #333;
+  display: grid;
+  place-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: #ccc;
+}
+.footer-copyright {
+  flex: 1 1 300px;
+  display: grid;
+  place-items: center start;
+}
+.footer-copyright__txt span {
+  color: #016cc7;
+}
+.footer-list-box {
+  flex: 1 1 300px;
+  display: grid;
+  place-items: center end;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+  color: #fcd93b;
+}
+.footer-list li {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+@media (min-width: 1200px) {
+  .intro-rocket__img {
+    max-height: 100%;
+    max-width: unset;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    max-width: 83%;
+    margin: auto;
+  }
+}
+@media (min-width: 700px) {
+  .footer {
+    justify-content: space-between;
+    height: 80px;
+    display: flex;
+  }
+}/*# sourceMappingURL=main.css.map */
